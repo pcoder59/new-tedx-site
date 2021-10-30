@@ -15,7 +15,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/contact', function(req, res, next) {
-  console.log(req.body)
+  console.log(req)
   var mailOptions = {
     from: req.body.email,
     to: "event.tedkochi@gmail.com",
