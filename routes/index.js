@@ -1,5 +1,12 @@
 var express = require('express');
 var router = express.Router();
+var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'event.tedkochi@gmail.com',
+    pass: 'hcetxlerqvdrqlie'
+  }
+});
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
