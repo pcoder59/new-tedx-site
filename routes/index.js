@@ -35,6 +35,9 @@ router.post('/contact', [check('name').isLength({min: 1}).withMessage("Name is R
     });
   }
   console.log(req)
+
 });
 
 module.exports = router;
+
+router.post("/signup", function (req,res,next{var name= req.body.name,var email= req.email,var phone= req.phone,var password= req.password}))

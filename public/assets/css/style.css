@@ -1,9 +1,3 @@
-/**
-* Template Name: TheEvent - v4.3.0
-* Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -794,6 +788,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #speakers-details .details p {
+  margin-top: 50px;
   color: #112363;
   font-size: 15px;
   margin-bottom: 10px;
@@ -1685,4 +1680,205 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-size: 13px;
   color: #ddd;
+}
+
+/* Login */
+
+form {
+  background: rgb(0, 0, 0);
+  max-width: 360px;
+  width: 100%;
+  box-shadow: 0 0 5px 0 rgba(42, 45, 48, 0.12);
+  transition: all 0.3s ease; 
+  width: 50%;
+  margin: 0 auto;
+}
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+
+.login-box input {
+  background: #000;
+  color: #ffffff;
+  flex: 1;
+  padding: 13px;
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 4px;
+  font-size: 16px;
+  transition: all 0.2s ease-out;
+}
+
+.login-box input:focus {
+  outline: none;
+}
+
+.login-box input::placeholder {
+  color: #868a9b;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  background: #c31515;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.2s ease-out;
+}
+
+.login-box button:hover {
+  background: #ff0000;
+}
+
+.form-links{
+  display: flex; 
+  justify-content: space-between;
+}
+
+.form-links p a{
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+#forgot{
+  align-items: flex-start;
+}
+
+#new{
+  float: right;
+  align-items: flex-end;
+}
+
+@media(max-width: 458px) {
+  
+  body {
+    margin: 0 18px;
+  }
+  
+  form {
+    background: #f9faff;
+    border: none;
+    box-shadow: none;
+    padding: 20px 0;
+  }
+
+}
+
+#player-overlay video{
+  width: 100%;
+  max-height: 100%;
+  border: 1px solid white;
+}
+
+/* profile section */
+
+
+.profile-box {
+  display: flex;
+  flex-direction: column;
+  /* margin: auto 20px; */
+  margin-bottom: 20px;
+}
+
+.write-up{
+  min-height: 20rem;
+}
+
+
+.profile-box button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  background: #c31515;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.2s ease-out;
+}
+
+.profile-box button:hover {
+  background: #ff0000;
+}
+
+.stream-box{
+  height: 70px;
+  width: 200px;
+  position: absolute;
+  top: 20vh;
+  right: 200px;
+}
+
+.stream-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  background: #c31515;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.2s ease-out;
+}
+
+#forgot{
+  align-items: flex-start;
+}
+
+#new{
+  float: right;
+  align-items: flex-end;
+}
+
+@media(max-width: 458px) {
+  
+  body {
+    margin: 0 18px;
+  }
+  
+  form {
+    background: #f9faff;
+    border: none;
+    box-shadow: none;
+    padding: 20px 0;
+  }
+
+}
+
+#player-overlay video{
+  width: 100%;
+  max-height: 100%;
+  border: 1px solid white;
+}
+
+/* Pop up */
+.pop-box{
+  margin: 5vh;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  border-radius: 50%;
+}
+.pop-icon{
+  font-size: 25px;
+  margin-top: 5px;
+  color:black;
+}
+.feedback-cont{
+  visibility: hidden;
+}
+.show{
+  visibility: visible;
 }
