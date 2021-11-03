@@ -28,9 +28,9 @@ router.post('/contact', [check('name').isLength({min: 1}).withMessage("Name is R
     }
     transporter.sendMail(mailOptions, function(error, info) {
       if(error) {
-        res.render('index', { senderror: true, default: true });
+        res.redirect('/');
       } else {
-        res.render('index', { success: true, default: true });
+        res.redirect('/');
       }
     });
   }
@@ -40,4 +40,8 @@ router.post('/contact', [check('name').isLength({min: 1}).withMessage("Name is R
 
 module.exports = router;
 
-router.post("/signup", function (req,res,next{var name= req.body.name,var email= req.email,var phone= req.phone,var password= req.password}))
+router.post("/signup", function (req,res,next){
+  var name= req.body.name,
+  var email= req.body.email,
+  var phone= req.body.phone,
+  var password= req.body.password})
