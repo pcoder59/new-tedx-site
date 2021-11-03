@@ -28,13 +28,13 @@ router.post('/contact', [check('name').isLength({min: 1}).withMessage("Name is R
     }
     transporter.sendMail(mailOptions, function(error, info) {
       if(error) {
+        console.log(error);
         res.render('index', { senderror: true, default: true });
       } else {
         res.render('index', { success: true, default: true });
       }
     });
   }
-  console.log(req)
 });
 
 module.exports = router;
