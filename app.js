@@ -9,6 +9,7 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({
     extended: true
 }));
