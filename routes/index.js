@@ -11,9 +11,9 @@ var transporter = nodemailer.createTransport({
 });
 
 /* GET home page. */
-/*router.get('/', function(req, res, next) {
+router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
-});*/
+});
 
 router.post('/contact', [check('name').isLength({min: 1}).withMessage("Name is Required"), check('email').isEmail().withMessage("Invalid Email"), check('message').isLength({min: 1}).withMessage("Message is Required")], function(req, res, next) {
   const errors = validationResult(req);
@@ -28,10 +28,9 @@ router.post('/contact', [check('name').isLength({min: 1}).withMessage("Name is R
     }
     transporter.sendMail(mailOptions, function(error, info) {
       if(error) {
-        console.log(error);
-        res.render('index');
+        res.redirect('/');
       } else {
-        res.render('index');
+        res.redirect('/');
       }
     });
   }
