@@ -34,8 +34,6 @@ router.post('/contact', [check('name').isLength({min: 1}).withMessage("Name is R
       }
     });
   }
-  console.log(req)
-
 });
 
 module.exports = router;
